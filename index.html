@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/vpa7luv.css" />
+  </head>
+  <body>
+    <header class="header"><h1>Svensknabben Hackathon 2022</h1></header>
+    <main>
+      <h1>Svensknabben Hackathon 2022</h1>
+      <div class="countdown js-countdown"></div>
+      <h2>
+        Save the date: <br />
+        fredag 3 juni!
+      </h2>
+      <div class="no-jumping-allowed">
+        <div class="tabs-container pixel-border" data-pixel-border-theme="1">
+          <div class="tabs" role="tablist">
+            <div class="tab-buttons">
+              <button
+                type="button"
+                class="tab tab--active"
+                role="tab"
+                aria-selected="true"
+                aria-controls="tab-1"
+              >
+                <img src="info.svg" style="width: 24px" alt="" />
+                About
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                aria-controls="tab-2"
+              >
+                <img
+                  src="calendar.png"
+                  style="width: 28px; height: 28px; transform: translateY(7px)"
+                  alt=""
+                />
+                Schedule
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                aria-controls="tab-3"
+              >
+                <img src="food.svg" alt="" />
+                Refreshments
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                aria-controls="tab-4"
+              >
+                <img src="heart.svg" alt="" />
+                Experience
+              </button>
+              <button
+                type="button"
+                class="tab"
+                role="tab"
+                aria-controls="tab-5"
+              >
+                <img
+                  src="question.svg"
+                  style="transform: translateY(1px)"
+                  alt=""
+                />
+                FAQ
+              </button>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-1">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Hacka Svensknabben är en lorem ipsum dolor sit amet,
+                consectetur, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <p>Du kommer att lorem ipsumma såre bara smäller om att.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-2" hidden>
+              <ul>
+                <li>8.30 - frukost & intro</li>
+                <li>9-12 POC</li>
+                <li>12-13 lunch</li>
+                <li>13-15.30 POC</li>
+                <li>15.30-16 sammanfattning av dagen + presentation</li>
+                <li>16-late AW</li>
+              </ul>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-3" hidden>
+              <p>Käk osv. Gott!</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-4" hidden>
+              <p>Glassbar?</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" id="tab-5" hidden>
+              <ul>
+                <li>Varför är blå en färg?</li>
+                <li>Hur många bultar finns det i Ölandsbron?</li>
+                <li>Hur många utvecklare krävs för att byta en glödlamp?</li>
+                <li>osv</li>
+                <li>osv</li>
+                <li>osv</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <style>
+      :root {
+        --pixel-bg: #572357;
+        --pixel-border: #392a38;
+        --pixel-border-2: #8f548a;
+        --pixel-border-3: var(--pixel-border);
+        --pixel: 0.125rem;
+      }
+
+      .pixel-border[data-pixel-border-theme="2"] {
+        --pixel-bg: #785fa8;
+        --pixel-border: #564a6e;
+        --pixel-border-2: #927bbf;
+        --pixel-border-3: #564a6e;
+      }
+
+      .pixel-border {
+        background: var(--pixel-bg);
+        transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+        box-shadow:
+
+        /* Inner Background Color */ 0
+            calc(var(--pixel) * -3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+          0 calc(var(--pixel) * 3) 0 calc(var(--pixel) * -1) var(--pixel-bg),
+          0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+          0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -2) var(--pixel-bg),
+          0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+          0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -4) var(--pixel-bg),
+          0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+          0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -6) var(--pixel-bg),
+          /* Pixel Border Layer 1 */ calc(var(--pixel) * -1) 0 0 0
+            var(--pixel-border),
+          var(--pixel) 0 0 0 var(--pixel-border),
+          0 calc(var(--pixel) * -2) 0 0 var(--pixel-border),
+          0 calc(var(--pixel) * 2) 0 0 var(--pixel-border),
+          0 calc(var(--pixel) * -5) 0 calc(var(--pixel) * -1)
+            var(--pixel-border),
+          0 calc(var(--pixel) * 5) 0 calc(var(--pixel) * -1) var(--pixel-border),
+          0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -2)
+            var(--pixel-border),
+          0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -2) var(--pixel-border),
+          0 calc(var(--pixel) * -10) 0 calc(var(--pixel) * -4)
+            var(--pixel-border),
+          0 calc(var(--pixel) * 10) 0 calc(var(--pixel) * -4)
+            var(--pixel-border),
+          0 calc(var(--pixel) * -13) 0 calc(var(--pixel) * -6)
+            var(--pixel-border),
+          0 calc(var(--pixel) * 13) 0 calc(var(--pixel) * -6)
+            var(--pixel-border),
+          /* Pixel Border Layer 2 */ calc(var(--pixel) * -2) 0 0 0
+            var(--pixel-border-2),
+          calc(var(--pixel) * 2) 0 0 0 var(--pixel-border-2),
+          0 calc(var(--pixel) * -1) 0 var(--pixel) var(--pixel-border-2),
+          0 var(--pixel) 0 var(--pixel) var(--pixel-border-2),
+          0 calc(var(--pixel) * -4) 0 0 var(--pixel-border-2),
+          0 calc(var(--pixel) * 4) 0 0 var(--pixel-border-2),
+          0 calc(var(--pixel) * -6) 0 calc(var(--pixel) * -1)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * 6) 0 calc(var(--pixel) * -1)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * -8) 0 calc(var(--pixel) * -2)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * 8) 0 calc(var(--pixel) * -2)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * -11) 0 calc(var(--pixel) * -4)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * 11) 0 calc(var(--pixel) * -4)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * -14) 0 calc(var(--pixel) * -6)
+            var(--pixel-border-2),
+          0 calc(var(--pixel) * 14) 0 calc(var(--pixel) * -6)
+            var(--pixel-border-2),
+          /* Border Layer 3: --pixel-border-3 */ calc(var(--pixel) * -3) 0 0 0
+            var(--pixel-border-3),
+          calc(var(--pixel) * 3) 0 0 0 var(--pixel-border-3),
+          0 0 0 calc(var(--pixel) * 2) var(--pixel-border-3),
+          0 calc(var(--pixel) * -3) 0 var(--pixel) var(--pixel-border-3),
+          0 calc(var(--pixel) * 3) 0 var(--pixel) var(--pixel-border-3),
+          0 calc(var(--pixel) * -5) 0 0 var(--pixel-border-3),
+          0 calc(var(--pixel) * 5) 0 0 var(--pixel-border-3),
+          0 calc(var(--pixel) * -7) 0 calc(var(--pixel) * -1)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * 7) 0 calc(var(--pixel) * -1)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * -9) 0 calc(var(--pixel) * -2)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * 9) 0 calc(var(--pixel) * -2)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * -12) 0 calc(var(--pixel) * -4)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * 12) 0 calc(var(--pixel) * -4)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * -15) 0 calc(var(--pixel) * -6)
+            var(--pixel-border-3),
+          0 calc(var(--pixel) * 15) 0 calc(var(--pixel) * -6)
+            var(--pixel-border-3);
+      }
+    </style>
+    <style>
+      @font-face {
+        font-family: "Digital Dismay";
+        src: url("Digital Dismay.otf") format("opentype");
+      }
+
+      body {
+        margin: 0;
+        background: #291945;
+        color: #fff;
+        font-family: lores-9-narrow, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .header {
+        min-height: 400px;
+        background-color: #572357;
+        background-image: url("./header.svg");
+        background-repeat-y: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .header h1 {
+        background-image: url("./banner.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        color: transparent;
+        text-align: center;
+        width: 340px;
+        height: 320px;
+        margin: 0 auto;
+        padding: 4rem 0;
+      }
+      main {
+        text-align: center;
+      }
+      .countdown {
+        position: relative;
+        font-family: "Digital Dismay", monospace;
+        font-size: 4rem;
+        margin: 4rem auto 2rem;
+        text-align: cnter;
+      }
+      .countdown::before {
+        position: absolute;
+        content: "00:00:00:00";
+        inset: 0;
+        opacity: 0.08;
+      }
+      h2 {
+        display: inline-block;
+        text-transform: uppercase;
+        transform: rotate(-9.5deg) translate(190px, -30px);
+        background: var(--pixel-bg);
+        border: 2px dashed var(--pixel-border-2);
+        padding: 0.5rem;
+        border-radius: 4px;
+        font-size: 1.25rem;
+        border-radius: 3px 2px 0.5px #262026;
+      }
+      .no-jumping-allowed {
+        min-height: 800px;
+      }
+      .tabs-container {
+        margin: 0 auto;
+        max-width: 760px;
+        margin-bottom: 3rem;
+      }
+      .tab-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.1rem;
+      }
+      .tab {
+        position: relative;
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+        background: none;
+        color: #a9a9a9;
+        font-family: lores-9-narrow, sans-serif;
+        cursor: pointer;
+        border: 0;
+        padding: 1rem;
+        text-transform: uppercase;
+        padding-left: 45px;
+        margin-bottom: 2px;
+      }
+      .tab img {
+        pointer-events: none;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+        inset: 4px;
+      }
+      .tab:not(.tab--active) img {
+        filter: grayscale(1);
+      }
+      .tab--active {
+        color: #fff;
+        border-bottom: 2px solid;
+        margin-bottom: 0;
+      }
+      .tab-panel {
+        text-align: left;
+        padding: 2rem 1.5rem 1rem;
+      }
+      ul {
+        list-style-type: square;
+        line-height: 1.35;
+        margin: 0;
+        padding: 0 0 0 1rem;
+      }
+    </style>
+    <script>
+      const date = new Date("Jun 5, 2022 08:30:00").getTime();
+
+      function setCountdown() {
+        const countdownEl = document.querySelector(".js-countdown");
+        const now = new Date().getTime();
+        const delta = date - now;
+
+        const days = Math.floor(delta / (1000 * 60 * 60 * 24))
+          .toString()
+          .padStart(2, "0");
+
+        const hours = Math.floor(
+          (delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        )
+          .toString()
+          .padStart(2, "0");
+
+        const minutes = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60))
+          .toString()
+          .padStart(2, "0");
+
+        const seconds = Math.floor((delta % (1000 * 60)) / 1000)
+          .toString()
+          .padStart(2, "0");
+
+        countdownEl.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+
+        const countdownCompleted = delta < 0;
+        if (countdownCompleted) {
+          countdownEl.innerHTML = "00:00:00";
+        }
+      }
+
+      setCountdown();
+      setInterval(setCountdown, 1000);
+
+      const bodyEl = document.querySelector("body");
+
+      bodyEl.addEventListener("click", (ev) => {
+        const target = ev.target;
+        if (!target.matches(".tab")) {
+          return;
+        }
+
+        const tabs = target.closest(".tabs");
+        const tabPanelsIds = [...tabs.querySelectorAll(".tab")].map((x) =>
+          x.getAttribute("aria-controls")
+        );
+
+        const index = target.getAttribute("aria-controls").replace("tab-", "");
+        target.closest(".pixel-border").dataset.pixelBorderTheme = index;
+
+        tabs.querySelectorAll(".tab").forEach((x) => {
+          x.classList.remove("tab--active");
+          x.ariaSelected = "false";
+        });
+
+        tabPanelsIds.forEach((x) => {
+          document.getElementById(x).hidden = true;
+        });
+
+        target.classList.add("tab--active");
+        target.ariaSelected = "true";
+        document.getElementById(
+          target.getAttribute("aria-controls")
+        ).hidden = false;
+      });
+    </script>
+  </body>
+</html>
