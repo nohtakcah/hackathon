@@ -287,8 +287,7 @@
       }
       .tab-buttons {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 0 1.1rem;
       }
       .tab {
@@ -339,6 +338,12 @@
 
         .no-jumping-allowed {
           margin-top: 0;
+        }
+
+        .tab-buttons {
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
         }
       }
 
