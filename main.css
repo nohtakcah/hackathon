@@ -201,6 +201,10 @@ ul {
   padding: 0 0 0 1rem;
 }
 
+.faq-list li {
+  margin-bottom: 40px;
+}
+
 footer {
   background-image: url("./footer.svg");
   height: 110px;
