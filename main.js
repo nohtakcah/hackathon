@@ -1,5 +1,5 @@
 ; (function () {
-    const date = new Date("Jun 5, 2022 08:30:00").getTime();
+    const date = new Date("Jun 3, 2022 08:30:00").getTime();
 
     const countdownDayOne = document.querySelector(".countdown .countdown--day-1");
     const countdownDayTwo = document.querySelector(".countdown .countdown--day-2");
